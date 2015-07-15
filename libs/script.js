@@ -13,11 +13,11 @@ $(function(){
 	function showIntr(){
 		$secinner.isShone=true;
 			$("#moeIntr h2").fadeIn(function(){
-				$("#moeIntr b").fadeIn(function(){
-					$("#moeIntr p").fadeIn(function(){
+				$("#moeIntr p").fadeIn(function(){
+					$("#moeIntr b").fadeIn(function(){
 						$("#frontIntr h2").fadeIn(function(){
-							$("#frontIntr b").fadeIn(function(){
-								$("#frontIntr p").fadeIn(function(){
+							$("#frontIntr p").fadeIn(function(){
+								$("#frontIntr b").fadeIn(function(){
 									$("#mfIntr p").fadeIn();
 						
 								});
