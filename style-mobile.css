@@ -7,6 +7,7 @@ body{
 	font-family: Comic sans ms,Microsoft Yahei;
 	height:100%;
 	background-color: rgb(20, 222, 239);
+	margin:0px;
 }
 #title{
 	font-size:56px;
@@ -40,6 +41,12 @@ body{
 }
 #navibar{
 	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	padding:10px;
+	background-color: #55BBFF;
+	width: 100%;
+	z-index:999;
 }
 #navi-item:hover{
 	background-color: #00CCFF;
@@ -91,5 +98,11 @@ img{
 }
 .pc-visit{
 	color:rgb(177, 130, 187);
+	text-decoration: none;
+}
+#like{
+	background-color: #FF1170;
+	padding:10px;
+	color:#fff;
 	text-decoration: none;
 }
