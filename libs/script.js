@@ -128,4 +128,8 @@ jQuery(document).ready(function($) {
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 });
-		
+
+var imwidth = document.body.clientWidth;
+console.log("当前屏幕宽度："+imwidth);
+if(imwidth <= 720)
+	window.location.href="mobile.html";

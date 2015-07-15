@@ -61,3 +61,14 @@ function doLike(){
 $("#like").click(function(){
 	doLike();
 })
+
+function getwidth(){
+	var imwidth = document.body.clientWidth;
+	console.log("当前屏幕宽度："+imwidth);
+	if(imwidth > 720)
+		window.location.href="index.html";
+}
+
+$(document).ready(function(){
+	getwidth();
+});
