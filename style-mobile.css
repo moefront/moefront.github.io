@@ -1,0 +1,95 @@
+/** 
+MoeFront Introduce Page(Mobile Version) CSS
+@2015/07/15
+@Copyright(c) 2015 MoeFront Members
+*/
+body{
+	font-family: Comic sans ms,Microsoft Yahei;
+	height:100%;
+	background-color: rgb(20, 222, 239);
+}
+#title{
+	font-size:56px;
+	text-align: center;
+	padding-top:10%;
+	color:#fff;
+	margin-bottom: 10px;
+}
+#title-moe{
+	color:rgb(177, 130, 187);
+}
+#canvas{
+	width:100%;
+	height:100%;
+	position: fixed;
+	z-index: -86;
+}
+#description{
+	color:#fff;
+	text-align: center;
+	font-size:22px;
+}
+#description > #des-ecy{
+	color:rgb(177, 130, 187);
+}
+#navi-item{
+	text-decoration: none;
+	border: 1px;
+	color:#eee;
+	padding:10px;
+}
+#navibar{
+	text-align: center;
+}
+#navi-item:hover{
+	background-color: #00CCFF;
+}
+
+#content{
+	/*display: none;*/
+	padding:15px;
+	text-align: center;
+}
+#introduce-text{
+	font-size:14px;
+}
+#introduce-moe{
+	color:#FFFF00;
+	font-size:22px;
+	font-weight: bold;
+}
+#introduce-front{
+	color:#FF00FF;
+	font-size:22px;
+	font-weight: bold;
+}
+#introduce-ife{
+	color:#eee;
+	font-size:18px;
+	font-weight: bold;
+}
+.member{
+	padding:10px;
+	width:100%;
+}
+img{
+	width:60px;
+	border-radius: 360px;
+	position: relative;
+	right: 0px;
+	float: left;
+}
+.member-introduce{
+	margin-left:10px;
+	display: inline;
+	padding:6px;
+	text-align: center;
+	color:#888888;
+}
+.default-text{
+	color: #fff;
+}
+.pc-visit{
+	color:rgb(177, 130, 187);
+	text-decoration: none;
+}
