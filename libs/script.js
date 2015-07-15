@@ -13,8 +13,8 @@ $(function(){
 	function showIntr(){
 		$secinner.isShone=true;
 			$("#moeIntr h2").fadeIn(function(){
-				$("#moeIntr p").fadeIn(function(){
-					$("#moeIntr b").fadeIn(function(){
+				$("#moeIntr b").fadeIn(function(){
+					$("#moeIntr p").fadeIn(function(){
 						$("#frontIntr h2").fadeIn(function(){
 							$("#frontIntr p").fadeIn(function(){
 								$("#frontIntr b").fadeIn(function(){
