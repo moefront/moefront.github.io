@@ -66,7 +66,7 @@ $(function(){
 
 	//Like
 	$.ajax({
-		url:"like.php?cmd=get",
+		url:"http://front.moe/like.php?cmd=get",
 		dataType:"json",
 		success:function(data){
 			$("#like span").html(data.likes);
@@ -81,7 +81,7 @@ $(function(){
 			$("#no2").fadeIn();
 		}else{
 			$.ajax({
-				url:"like.php?cmd=add",
+				url:"http://front.moe/like.php?cmd=add",
 				dataType:"json",
 				success:function(data){
 					$("#like span").html(data.likes);
