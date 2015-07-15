@@ -333,3 +333,27 @@ div.memberItem:hover{
 	text-align: center;
 	margin: 0 auto;
 }
+#navitem{
+	display: inline;
+	font-size:20px;
+	z-index:99;
+	margin:30px;
+}
+#header-nav{
+	position:fixed;
+	top:0px;
+	padding:10px;
+	z-index:999;
+	width:100%;
+	font-family:Comic sans ms;
+	color:#fff;
+	background-color: rgb(20, 222, 239);
+	text-align:right;
+	display: none;
+}
+#header-nav a{
+	font-size:32px;
+	text-decoration: none;
+	color:#eee;
+	border-bottom: 0px;
+}

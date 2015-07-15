@@ -15,23 +15,23 @@ $(function(){
 	//anime functions
 	function showIntr(){
 		$secinner.isShone=true;
-			$("#moeIntr h2").fadeIn(function(){
-				$("#moeIntr b").fadeIn(function(){
-					$("#moeIntr p").fadeIn(function(){
-						$("#frontIntr h2").fadeIn(function(){
-							$("#frontIntr p").fadeIn(function(){
-								$("#frontIntr b").fadeIn(function(){
-									$("#mfIntr p").fadeIn();
-						
-								});
-					
+		$("#moeIntr h2").fadeIn(function(){
+			$("#moeIntr b").fadeIn(function(){
+				$("#moeIntr p").fadeIn(function(){
+					$("#frontIntr h2").fadeIn(function(){
+						$("#frontIntr p").fadeIn(function(){
+							$("#frontIntr b").fadeIn(function(){
+								$("#mfIntr p").fadeIn();
+
 							});
+
 						});
 					});
-					
 				});
+
 			});
-			console.log("Intr Show Time!");
+		});
+		console.log("Intr Show Time!");
 	}
 
 	function showMember(){
@@ -102,4 +102,22 @@ $(function(){
 		doLike();
 	})
 	$("#headlines").animate({width:"80%"});
+
+	//Navbar Function
+	var navH = $("#secscreen").offset().top;
+   	 //滚动条事件
+    	$(window).scroll(function(){
+    		//获取滚动条的滑动距离
+    		var scroH = $(this).scrollTop();
+   		 //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，执行的函数或代码
+    		if(scroH>=navH){
+    			$("#header-nav").fadeIn(500);
+  		  }
+    		//否则，执行以下代码
+    		else if(scroH<navH)
+    		{
+    			$("#header-nav").css({"display":"none"});
+   		 }
+	});
+
 });
