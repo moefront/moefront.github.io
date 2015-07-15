@@ -1,307 +1,323 @@
-	body,html{
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		font-family: "Segeo UI Mono", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "Droid Sans Fallback", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Sans;
+/* latin-ext */
+@font-face {
+	font-family: 'Yanone Kaffeesatz';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://fontstatic.useso.com/s/yanonekaffeesatz/v7/YDAoLskQQ5MOAgvHUQCcLV83L2yn_om9bG0a6EHWBso.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Yanone Kaffeesatz';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://fontstatic.useso.com/s/yanonekaffeesatz/v7/YDAoLskQQ5MOAgvHUQCcLfGwxTS8d1Q9KiDNCMKLFUM.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body,html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "Segeo UI Mono", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "Droid Sans Fallback", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Sans;
 
-	}
-	.clearfix:after {
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-		clear: both;
-	}
-	*{
-		margin: 0;
-		padding: 0;
-	}
-	b{
-		color: rgba(128, 128, 128, 0.59);
-		font-size: 10px;
-		display: block;
-	}
-	del{
-		color: rgba(128, 128, 128, 0.59);
-		font-size: 10px;
-	}
-	a{
-		color: rgb(42, 130, 161);
-		text-decoration: none;
-		border-bottom: currentColor dashed 1px;
-	}
-	#fstscreen{
-		background-color: rgb(20, 222, 239);
-		overflow: hidden;
-	}
-	.headlines{
-		display: block;
-		text-align: center;
-		/* height: 32px; */
-		/* margin: 0 auto; */
-		/* font-size: 100px; */
-		color: white;
-		
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+b{
+	color: rgba(128, 128, 128, 0.59);
+	font-size: 10px;
+	display: block;
+}
+del{
+	color: rgba(128, 128, 128, 0.59);
+	font-size: 10px;
+}
+a{
+	color: rgb(42, 130, 161);
+	text-decoration: none;
+	border-bottom: currentColor dashed 1px;
+}
+#fstscreen{
+	background-color: rgb(20, 222, 239);
+	overflow: hidden;
+}
+.headlines{
+	display: block;
+	text-align: center;
+	/* height: 32px; */
+	/* margin: 0 auto; */
+	/* font-size: 100px; */
+	color: white;
+	
 
-	}
-	#headline {
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 80%;
-		height: 50%;
-		margin-left: -40%;
-		margin-top: -18%;
-		z-index: 10;
-		overflow: hidden;
-		font-family: 'Yanone Kaffeesatz', sans-serif;
-		}
-	#title{
-		font-size: 150px;
-		margin: 0;
-	}
-	.moe{
-		color:rgb(177, 130, 187);
-	}
-	#subtitle
-	{
-		
-		position: relative;
-		margin: 50px;
-		left: 72px;
-		font-size: 30px;
-	}
-	.screen{
-		widows: 100%;
-		height: 900px;
-		overflow-x: hidden;
-	}
-	#secscreen{
-		background-image: url(./bg2.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
+}
+#headline {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: 50%;
+	margin-left: -40%;
+	margin-top: -18%;
+	z-index: 10;
+	overflow: hidden;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#title{
+	font-size: 150px;
+	margin: 0;
+}
+.moe{
+	color:rgb(177, 130, 187);
+}
+#subtitle
+{
+	
+	position: relative;
+	margin: 50px;
+	left: 72px;
+	font-size: 30px;
+}
+.screen{
+	widows: 100%;
+	height: 900px;
+	overflow-x: hidden;
+}
+#secscreen{
+	background-image: url(./bg2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#thdscreen{
+	background-color:  rgb(20, 239, 131);
+	background-image: url(./bg3.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#thdinner{
+	position: relative;
+	background-color:   rgb(70, 187, 129);
+	top:35%;
+	height: 65%;
+	width:100%;
+}
+#secinner{
+	position: relative;
+	top: 35%;
+	width: 100%;
+	height: 65%;
+	background-color: rgb(233, 239, 20);
+	overflow: hidden;
+	/* box-shadow: 0px 3px 40px black; */
+}
+footer{
+	background-image: url(./bg3.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#footinner{
+	position: relative;
+	top: 35%;
+	width: 100%;
+	height: 65%;
+	background-color: rgb(20, 222, 239);
+}
+#thdinner > h2{
+	padding: 10px 0 0 0;	
+	font-size: 100px;
+	color: rgb(246, 253, 144);
+	text-align: center;
+}
+.memberItem img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	float: left;
+}
+.memberItem{
+	display: inline-block;
+	font-size: 15px;
+	vertical-align: top;
+	padding: 30px 1.5%;
+	width: 29%;
+
+}
+#memberlist{
+	padding: 10px 10%;
+}
+#memberlist a{
+	border: none;
+	color:rgba(20, 53, 68, 0.79);
+}
+div.memberItem:hover{
+	background-color:rgba(255, 255, 255, 0.56);
+}
+#memberlist p.skill{
+	line-height: 3em;
+	opacity: .8;
+	font-size: small;
+}
+.memberInfo{
+	margin-left: 20px;
+	float: left;
+	width: 175px;
+}
+.row{
+	padding: 12% 5%;
+}
+.row p{
+	z-index: 100;
+	line-height: 1.7;
+	font-size: 110%;
+
+}
+.col-3{
+	display: inline-block;
+	width: 32%;
+
+}
+.col-3 > *{
+	padding: 10px;
+}
+#moeIntr h2{
+	left:70px;
+	color: rgba(236, 63, 233, 0.52);
+}
+#frontIntr h2{
+	right:104px;
+	color: rgba(107, 63, 236, 0.52);
+}
+#secrow h2{
+	position: absolute;
+	top: 20px;
+	font-size: 150px;
+}
+.anime{
+	display: none;
+}
+#footinner h2{
+	text-align: center;
+	padding: 33px 0;
+	font-size: 73px;
+	color: gray;
+}
+
+#like {
+	margin: 40px auto;
+	font-size: 70px;
+	color: rgb(250, 69, 69);
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	width: 300px;
+
+}
+#like:hover{
+	background-color: rgb(250, 69, 69);
+	color: white;
+	cursor: pointer;
+}
+#thx{
+	text-align: center;
+	color: white;
+	display: none;
+}
+#no2{
+	background-color: rgb(250, 69, 69);
+	text-align: center;
+	color: white;
+	padding: 10px;
+	margin: 0 auto;
+	width: 230px;
+	display: none;
+}
+#cprt{
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto 10px 0 ;
+	color: gray;
+	font-size: 20px;
+}
+#too-narrow{
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	text-align: center;
+	color: red;
+	font-size: 14px;
+	display: none;
+}
+
+@media screen and (max-width: 1266px){
 	#thdscreen{
-		background-color:  rgb(20, 239, 131);
-		background-image: url(./bg3.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#thdinner{
-		position: relative;
-		background-color:   rgb(70, 187, 129);
-		top:35%;
-		height: 65%;
-		width:100%;
-	}
-	#secinner{
-		position: relative;
-		top: 35%;
-		width: 100%;
-		height: 65%;
-		background-color: rgb(233, 239, 20);
+		height:1200px;
 		overflow: hidden;
-		/* box-shadow: 0px 3px 40px black; */
 	}
-	footer{
-		background-image: url(./bg3.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#footinner{
-		position: relative;
-		top: 35%;
-		width: 100%;
-		height: 65%;
-		  background-color: rgb(20, 222, 239);
-	}
-	#thdinner > h2{
-		padding: 10px 0 0 0;	
-		font-size: 100px;
-		color: rgb(246, 253, 144);
-		text-align: center;
-	}
-	.memberItem img{
-		width: 100px;
-		height: 100px;
-		border-radius: 100%;
-		float: left;
-	}
-	.memberItem{
-		display: inline-block;
-		font-size: 15px;
-		vertical-align: top;
-		padding: 30px 1.5%;
-		width: 29%;
-
-	}
-	#memberlist{
-		  padding: 10px 10%;
-	}
-	#memberlist a{
-		  border: none;
-		  color:rgba(20, 53, 68, 0.79);
-	}
-	div.memberItem:hover{
-		background-color:rgba(255, 255, 255, 0.56);
-	}
-	#memberlist p.skill{
-		line-height: 3em;
-		opacity: .8;
-		font-size: small;
-	}
-	.memberInfo{
-		margin-left: 20px;
-		float: left;
-		width: 175px;
-	}
-	.row{
-		  padding: 12% 5%;
-	}
-	.row p{
-		z-index: 100;
-		line-height: 1.7;
-		font-size: 110%;
-
-	}
-	.col-3{
-		display: inline-block;
-		width: 32%;
-
-	}
-	.col-3 > *{
-		padding: 10px;
-	}
-	#moeIntr h2{
-		left:70px;
-		color: rgba(236, 63, 233, 0.52);
-	}
-	#frontIntr h2{
-		right:104px;
-		color: rgba(107, 63, 236, 0.52);
-	}
+}
+@media screen and (max-width: 977px){
 	#secrow h2{
 		position: absolute;
 		top: 20px;
-		font-size: 150px;
-	}
-	.anime{
-		display: none;
-	}
-	#footinner h2{
-		text-align: center;
-		padding: 33px 0;
-		font-size: 73px;
-		color: gray;
+		font-size: 100px;
 	}
 
-	#like {
-		margin: 40px auto;
-		font-size: 70px;
-		color: rgb(250, 69, 69);
-		text-align: center;
-		font-family: 'Yanone Kaffeesatz', sans-serif;
-		width: 300px;
-
+}
+@media screen and (max-width: 720px){
+	#title{
+		font-size: 110px;
 	}
-	#like:hover{
-		background-color: rgb(250, 69, 69);
-		color: white;
-		cursor: pointer;
-	}
-	#thx{
-		text-align: center;
-		color: white;
-		display: none;
-	}
-	#no2{
-		background-color: rgb(250, 69, 69);
-		text-align: center;
-		color: white;
-		padding: 10px;
-		margin: 0 auto;
-		width: 230px;
-		display: none;
-	}
-	#cprt{
-		position: absolute;
-		bottom: 0px;
-		text-align: center;
-		width: 100%;
-		margin: 0 auto 10px 0 ;
-		color: gray;
+	#subtitle{
+		margin: 20px;
+		left: 78px;
 		font-size: 20px;
 	}
-	#too-narrow{
-		position: absolute;
-		bottom: 100px;
-		width: 100%;
-		text-align: center;
-		color: red;
-		font-size: 14px;
+	#secscreen{
 		display: none;
 	}
-	
-	@media screen and (max-width: 1266px){
-		#thdscreen{
-			height:1200px;
-			overflow: hidden;
-		}
+	#thdscreen{
+		display: none;
 	}
-	@media screen and (max-width: 977px){
-		#secrow h2{
-			position: absolute;
-			top: 20px;
-			font-size: 100px;
-		}
+	footer{
+		display: none;
+	}
+	#too-narrow{
+		display: block;
+	}
+}
 
-	}
-	@media screen and (max-width: 720px){
-	    #title{
-	    	font-size: 110px;
-	    }
-	    #subtitle{
-			margin: 20px;
-			left: 78px;
-			font-size: 20px;
-	    }
-	    #secscreen{
-	    	display: none;
-	    }
-	    #thdscreen{
-	    	display: none;
-	    }
-	    footer{
-	    	display: none;
-	    }
-	    #too-narrow{
-	    	display: block;
-	    }
-	}
 
-	
-	@media screen and (max-width: 520px){
-	    #title{
-	    	font-size: 80px;
-	    }
-	    #subtitle{
-			margin: 0;
-			left: 58px;
-			font-size: 14px;
-	    }
+@media screen and (max-width: 520px){
+	#title{
+		font-size: 80px;
 	}
+	#subtitle{
+		margin: 0;
+		left: 58px;
+		font-size: 14px;
+	}
+}
 
-	@media screen and (max-width: 380px){
-	    #title{
-	    	font-size: 60px;
-	    }
-	    #subtitle{
-			margin: 0;
-			left: 42px;
-			font-size: 5px;
-	    }
+@media screen and (max-width: 380px){
+	#title{
+		font-size: 60px;
 	}
+	#subtitle{
+		margin: 0;
+		left: 42px;
+		font-size: 5px;
+	}
+}
