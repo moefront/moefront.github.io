@@ -69,7 +69,7 @@ $(function(){
 			$("#like span").html(data.likes);
 		},
 		error:function(){
-			$("#like span").html("服务器在开小差。稍后再试吧");
+			$("#like span").html("niconiconi~");
 		}
 	});
 	function doLike(){
@@ -86,7 +86,7 @@ $(function(){
 					$.cookie("moemoeda", "moemoeda"); 
 				},
 				error:function(){
-					$("#like span").html("服务器在开小差。稍后再试吧");
+					$("#like span").html("niconiconi~");
 				}
 			});
 			
