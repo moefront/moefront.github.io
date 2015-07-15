@@ -152,7 +152,7 @@ footer{
 	font-size: 15px;
 	vertical-align: top;
 	padding: 30px 1.5%;
-	width: 29%;
+	width: 30%;
 
 }
 #memberlist{
@@ -166,7 +166,7 @@ div.memberItem:hover{
 	background-color:rgba(255, 255, 255, 0.56);
 }
 #memberlist p.skill{
-	line-height: 3em;
+	line-height: 1.8em;
 	opacity: .8;
 	font-size: small;
 }
@@ -320,4 +320,11 @@ div.memberItem:hover{
 		left: 42px;
 		font-size: 5px;
 	}
+}
+.children-title{
+	font-family: Comic sans ms;
+}
+.center{
+	text-align: center;
+	margin: 0 auto;
 }

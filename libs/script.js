@@ -1,4 +1,7 @@
 $(function(){
+
+	$("#headline").fadeIn(2000);
+
 	$("#fstscreen").height(window.innerHeight);
 	//init animation
 	var $secinner=$("#secscreen");
