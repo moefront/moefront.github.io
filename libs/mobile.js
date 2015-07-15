@@ -43,18 +43,18 @@ $.ajax({
 });
 function doLike(){
 	var $like_num=$("#like span");
-		$.ajax({
-			url:"http://front.moe/like.php?cmd=add",
-			dataType:"json",
-			success:function(data){
-				$("#like span").html(data.likes);
-				$("#thx").fadeIn();
-				$.cookie("moemoeda", "moemoeda"); 
-			},
-			error:function(){
-				$("#like span").html("niconiconi~");
-			}
-		});
+	$.ajax({
+		url:"http://front.moe/like.php?cmd=add",
+		dataType:"json",
+		success:function(data){
+			$("#like span").html(data.likes);
+			$("#thx").fadeIn();
+			$.cookie("moemoeda", "moemoeda"); 
+		},
+		error:function(){
+			$("#like span").html("niconiconi~");
+		}
+	});
 
 
 }
