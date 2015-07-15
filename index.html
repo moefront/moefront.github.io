@@ -7,8 +7,316 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	body,html{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		font-family: "Segeo UI Mono", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "Droid Sans Fallback", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Sans;
 
+	}
+	.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	b{
+		color: rgba(128, 128, 128, 0.59);
+		font-size: 10px;
+		display: block;
+	}
+	del{
+		color: rgba(128, 128, 128, 0.59);
+		font-size: 10px;
+	}
+	a{
+		color: rgb(42, 130, 161);
+		text-decoration: none;
+		border-bottom: currentColor dashed 1px;
+	}
+	#fstscreen{
+		background-color: rgb(20, 222, 239);
+		overflow: hidden;
+	}
+	.headlines{
+		display: block;
+		text-align: center;
+		/* height: 32px; */
+		/* margin: 0 auto; */
+		/* font-size: 100px; */
+		color: white;
+		
+
+	}
+	#headline {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 80%;
+		height: 50%;
+		margin-left: -40%;
+		margin-top: -18%;
+		z-index: 10;
+		overflow: hidden;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		}
+	#title{
+		font-size: 150px;
+		margin: 0;
+	}
+	.moe{
+		color:rgb(177, 130, 187);
+	}
+	#subtitle
+	{
+		
+		position: relative;
+		margin: 50px;
+		left: 72px;
+		font-size: 30px;
+	}
+	.screen{
+		widows: 100%;
+		height: 900px;
+		overflow-x: hidden;
+	}
+	#secscreen{
+		background-image: url(./bg2.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#thdscreen{
+		background-color:  rgb(20, 239, 131);
+		background-image: url(./bg3.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 1000px;
+	}
+	#thdinner{
+		position: relative;
+		background-color:   rgb(70, 187, 129);
+		top:35%;
+		height: 65%;
+		width:100%;
+	}
+	#secinner{
+		position: relative;
+		top: 35%;
+		width: 100%;
+		height: 65%;
+		background-color: rgb(233, 239, 20);
+		overflow: hidden;
+		/* box-shadow: 0px 3px 40px black; */
+	}
+	footer{
+		background-image: url(./bg3.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#footinner{
+		position: relative;
+		top: 35%;
+		width: 100%;
+		height: 65%;
+		  background-color: rgb(20, 222, 239);
+	}
+	#thdinner > h2{
+		padding: 10px 0 0 0;	
+		font-size: 100px;
+		color: rgb(246, 253, 144);
+		text-align: center;
+	}
+	.memberItem img{
+		width: 100px;
+		height: 100px;
+		border-radius: 100%;
+		float: left;
+	}
+	.memberItem{
+		display: inline-block;
+		font-size: 15px;
+		vertical-align: top;
+		padding: 30px 1.5%;
+		width: 29%;
+
+	}
+	#memberlist{
+		  padding: 10px 10%;
+	}
+	#memberlist a{
+		  border: none;
+		  color:rgba(20, 53, 68, 0.79);
+	}
+	div.memberItem:hover{
+		background-color:rgba(255, 255, 255, 0.56);
+	}
+	#memberlist p.skill{
+		line-height: 3em;
+		opacity: .8;
+		font-size: small;
+	}
+	.memberInfo{
+		margin-left: 20px;
+		float: left;
+		width: 175px;
+	}
+	.row{
+		  padding: 12% 5%;
+	}
+	.row p{
+		z-index: 100;
+		line-height: 1.7;
+		font-size: 110%;
+
+	}
+	.col-3{
+		display: inline-block;
+		width: 32%;
+
+	}
+	.col-3 > *{
+		padding: 10px;
+	}
+	#moeIntr h2{
+		left:70px;
+		color: rgba(236, 63, 233, 0.52);
+	}
+	#frontIntr h2{
+		right:104px;
+		color: rgba(107, 63, 236, 0.52);
+	}
+	#secrow h2{
+		position: absolute;
+		top: 20px;
+		font-size: 150px;
+	}
+	.anime{
+		display: none;
+	}
+	#footinner h2{
+		text-align: center;
+		padding: 33px 0;
+		font-size: 73px;
+		color: gray;
+	}
+
+	#like {
+		margin: 40px auto;
+		font-size: 70px;
+		color: rgb(250, 69, 69);
+		text-align: center;
+		font-family: "PT Serif",Georgia,Times,serif;
+		width: 300px;
+
+	}
+	#like:hover{
+		background-color: rgb(250, 69, 69);
+		color: white;
+		cursor: pointer;
+	}
+	#thx{
+		text-align: center;
+		color: white;
+		display: none;
+	}
+	#no2{
+		background-color: rgb(250, 69, 69);
+		text-align: center;
+		color: white;
+		padding: 10px;
+		margin: 0 auto;
+		width: 230px;
+		display: none;
+	}
+	#cprt{
+		position: absolute;
+		bottom: 0px;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto 10px 0 ;
+		color: gray;
+		font-size: 20px;
+	}
+	#too-narrow{
+		position: absolute;
+		bottom: 100px;
+		width: 100%;
+		text-align: center;
+		color: red;
+		font-size: 14px;
+		display: none;
+	}
+	
+	@media screen and (max-width: 1266px){
+		#thdscreen{
+			height:1200px;
+			overflow: hidden;
+		}
+	}
+	@media screen and (max-width: 977px){
+		#secrow h2{
+			position: absolute;
+			top: 20px;
+			font-size: 100px;
+		}
+
+	}
+	@media screen and (max-width: 720px){
+	    #title{
+	    	font-size: 110px;
+	    }
+	    #subtitle{
+			margin: 20px;
+			left: 78px;
+			font-size: 20px;
+	    }
+	    #secscreen{
+	    	display: none;
+	    }
+	    #thdscreen{
+	    	display: none;
+	    }
+	    footer{
+	    	display: none;
+	    }
+	    #too-narrow{
+	    	display: block;
+	    }
+	}
+
+	
+	@media screen and (max-width: 520px){
+	    #title{
+	    	font-size: 80px;
+	    }
+	    #subtitle{
+			margin: 0;
+			left: 58px;
+			font-size: 14px;
+	    }
+	}
+
+	@media screen and (max-width: 380px){
+	    #title{
+	    	font-size: 60px;
+	    }
+	    #subtitle{
+			margin: 0;
+			left: 42px;
+			font-size: 5px;
+	    }
+	}
+	</style>
 </head>
 <body style="height:100%;   /*background-color: #3ac19f;*/">
 	<section id="fstscreen" class="screen">
@@ -17,17 +325,8 @@
 			<h1 id="title" class="headlines"><span class="moe">Moe</span>Front</h1>
 			<h2 id="subtitle" class="headlines">当<span class="moe">#二次元#</span>遇到前端</h2>
 			<br>
-			<p class="headlines">
-			<a href="#secinner" class="scroll scr-button">▼VIEW MORE</a>
-			</p>
 		</div>
 		<div id="too-narrow">很抱歉，PC版介绍暂时未适配您设备的屏幕<br>请访问<a href="mobile.html" style="z-index:1000;">移动版介绍页面(mobile.html)</a></div>
-	</section>
-	<section id="header-nav">
-		<span style="float:left;font-size:36px;"><a href="#fstscreen" class="scroll"><span style="color:rgb(177, 130, 187);">Moe</span>Front</a></span>
-		<a href="#secinner" id="navitem" class="scroll">Introduction</a>
-		<a href="#thdinner" id="navitem" class="scroll">Members</a>
-		<a href="#footinner" id="navitem" class="scroll">Like Us</a>
 	</section>
 	<section id="secscreen" class="screen">
 		<div id="secinner">
@@ -61,10 +360,7 @@
 					<p class="anime">
 						Front即Front-end。意为Web开发中的前端。我们主攻前端的界面的设计和用户交互。以学习HTML、CSS 以及JavaScript、ajax，为目的组成了这个团队。
 					</p>
-				</div>
-			<p class="headlines">
-			<a href="#thdinner" class="scroll scr-button">▼MEMBERS</a>
-			</p>				
+				</div>				
 			</div>
 		</div>
 	</section>
