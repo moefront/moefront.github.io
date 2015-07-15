@@ -98,4 +98,5 @@ $(function(){
 	$("#like").click(function(){
 		doLike();
 	})
+	$("#headlines").animate({width:"80%"});
 });
