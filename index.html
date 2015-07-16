@@ -8,407 +8,9 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/style.css">
 	<style>
-	@font-face {
-		font-family: 'Yanone Kaffeesatz';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(YDAoLskQQ5MOAgvHUQCcLV83L2yn_om9bG0a6EHWBso.woff2) format('woff2');
-		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-	}
-	/* latin */
-	@font-face {
-		font-family: 'Yanone Kaffeesatz';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(YDAoLskQQ5MOAgvHUQCcLfGwxTS8d1Q9KiDNCMKLFUM.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-	}
-	body,html{
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		font-family: "Segeo UI Mono", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "Droid Sans Fallback", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Sans;
-
-	}
-	h2{
-		font-family: 'Yanone Kaffeesatz';
-	}
-	.clearfix:after {
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-		clear: both;
-	}
-	*{
-		margin: 0;
-		padding: 0;
-	}
-	b{
-		color: rgba(128, 128, 128, 0.59);
-		font-size: 10px;
-		display: block;
-	}
-	del{
-		color: rgba(128, 128, 128, 0.59);
-		font-size: 10px;
-	}
-	a{
-		color: rgb(42, 130, 161);
-		text-decoration: none;
-		border-bottom: currentColor dashed 1px;
-	}
-	#fstscreen{
-		background-color: rgb(20, 222, 239);
-		overflow: hidden;
-	}
-	.headlines{
-		display: block;
-		text-align: center;
-		/* height: 32px; */
-		/* margin: 0 auto; */
-		/* font-size: 100px; */
-		color: white;
-		
-
-	}
-	#headline {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 80%;
-		height: 50%;
-		margin-left: -40%;
-		margin-top: -18%;
-		z-index: 10;
-		overflow: hidden;
-		font-family: 'Yanone Kaffeesatz', sans-serif;
-		}
-	#title{
-		font-size: 150px;
-		margin: 0;
-	}
-	.moe{
-		color:rgb(177, 130, 187);
-	}
-	#subtitle
-	{
-		
-		position: relative;
-		margin: 50px;
-		left: 72px;
-		font-size: 30px;
-	}
-	.screen{
-		width: 100%;
-		height: 300px;
-		overflow-x: hidden;
-	}
-	#secscreen{
-		background-image: url(./bg2.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#thdscreen{
-		background-color:  rgb(20, 239, 131);
-		background-image: url(./bg3.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#thdinner{
-		position: relative;
-		background-color:   rgb(70, 187, 129);
-		top:35%;
-		height: 650px;
-		width:100%;
-	}
-	#secinner{
-		position: relative;
-		top: 35%;
-		width: 100%;
-		height: 500px;
-		background-color: rgb(233, 239, 20);
-		overflow: hidden;
-		/* box-shadow: 0px 3px 40px black; */
-	}
-	#footers{
-		background-image: url(./bg3.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#footinner{
-		position: relative;
-		top: 35%;
-		width: 100%;
-		height: 500px;
-		background-color: rgb(20, 222, 239);
-	}
-	#thdinner > h2{
-		padding: 10px 0 0 0;	
-		font-size: 100px;
-		color: rgb(246, 253, 144);
-		text-align: center;
-	}
-	.memberItem img{
-		width: 100px;
-		height: 100px;
-		border-radius: 100%;
-		float: left;
-	}
-	.memberItem{
-		display: inline-block;
-		font-size: 15px;
-		vertical-align: top;
-		padding: 30px 1.5%;
-		width: 29%;
-
-	}
-	#memberlist{
-		  padding: 10px 10%;
-	}
-	#memberlist a{
-		  border: none;
-		  color:rgba(20, 53, 68, 0.79);
-	}
-	div.memberItem:hover{
-		background-color:rgba(255, 255, 255, 0.56);
-	}
-	#memberlist p.skill{
-		line-height: 3em;
-		opacity: .8;
-		font-size: small;
-	}
-	.memberInfo{
-		margin-left: 20px;
-		float: left;
-		width: 175px;
-	}
-	.row{
-		  padding: 12% 5%;
-	}
-	.row p{
-		z-index: 100;
-		line-height: 1.7;
-		font-size: 110%;
-
-	}
-	.col-3{
-		display: inline-block;
-		width: 32%;
-
-	}
-	.col-3 > *{
-		padding: 10px;
-	}
-	#moeIntr h2{
-		left:70px;
-		color: rgba(236, 63, 233, 0.52);
-	}
-	#frontIntr h2{
-		right:104px;
-		color: rgba(107, 63, 236, 0.52);
-	}
-	#secrow h2{
-		position: absolute;
-		top: 20px;
-		font-size: 150px;
-	}
-	.anime{
-		display: none;
-	}
-	#footinner h2{
-		text-align: center;
-		padding: 33px 0;
-		font-size: 73px;
-		color: gray;
-	}
-
-	#like {
-		margin: 40px auto;
-		font-size: 70px;
-		color: rgb(250, 69, 69);
-		text-align: center;
-		font-family: "PT Serif",Georgia,Times,serif;
-		width: 300px;
-
-	}
-	#like:hover{
-		background-color: rgb(250, 69, 69);
-		color: white;
-		cursor: pointer;
-	}
-	#thx{
-		text-align: center;
-		color: white;
-		display: none;
-	}
-	#no2{
-		background-color: rgb(250, 69, 69);
-		text-align: center;
-		color: white;
-		padding: 10px;
-		margin: 0 auto;
-		width: 230px;
-		display: none;
-	}
-	#cprt{
-		position: absolute;
-		bottom: 0px;
-		text-align: center;
-		width: 100%;
-		margin: 0 auto 10px 0 ;
-		color: gray;
-		font-size: 20px;
-	}
-	#too-narrow{
-		position: absolute;
-		bottom: 100px;
-		width: 100%;
-		text-align: center;
-		color: red;
-		font-size: 14px;
-		display: none;
-	}
-	nav{
-		position: fixed;
-		right: 5px;
-		top: 20%;
-		padding: 10px;
-		text-align: center;
-		z-index: 999;
-	}
-	nav span{
-		font-family: "fontello";
-		font-size: 50px;
-		color: rgba(0, 0, 0, 0.59);
-		font-size: 36px;50px;
-	}
-	nav ul li{
-		display: block;
-		padding: 15px;
-	}
-	nav ul li a{
-		display: inline-block;
-		border: none;
-	}
-	nav ul li:hover{
-		background-color: rgba(255, 255, 255, 0.47);
-	}
-	nav ul li.cur{
-		background-color: rgba(255, 255, 255, 0.67);
-	}
-	.next span{
-		font-family: "fontello";
-	}
-	a.next{
-		position: absolute;
-		color: white;
-		bottom: 0px;
-		display: block;
-		font-size: 80px;
-		text-align: center;
-		width: 80px;
-		margin: 0 -40px;
-		left: 50%;
-		border: none;
-		cursor: pointer;
-		-webkit-animation: bounce 4s 2s infinite;
-		animation: bounce 4s 2s infinite;
-	}
-	@media screen and (max-width: 1272px){
-		#thdinner{
-			height: 850px;
-		}
-	}
-	@media screen and (max-width: 977px){
-		#secrow h2{
-			position: absolute;
-			top: 20px;
-			font-size: 100px;
-		}
-
-	}
-	@media screen and (max-width: 720px){
-	    #title{
-	    	font-size: 110px;
-	    }
-	    #subtitle{
-			margin: 20px;
-			left: 78px;
-			font-size: 20px;
-	    }
-	    #secscreen{
-	    	display: none;
-	    }
-	    #thdscreen{
-	    	display: none;
-	    }
-	    footer{
-	    	display: none;
-	    }
-	    #too-narrow{
-	    	display: block;
-	    }
-	}
-
 	
-	@media screen and (max-width: 520px){
-	    #title{
-	    	font-size: 80px;
-	    }
-	    #subtitle{
-			margin: 0;
-			left: 58px;
-			font-size: 14px;
-	    }
-	}
-
-	@media screen and (max-width: 380px){
-	    #title{
-	    	font-size: 60px;
-	    }
-	    #subtitle{
-			margin: 0;
-			left: 42px;
-			font-size: 5px;
-	    }
-	}
-
-
-
-/* Used to bounce .scroll-down on home page */
-	@-webkit-keyframes bounce {
-	    0%, 10%, 25%, 40%, 50% {
-	        -webkit-transform: translateY(0);
-	                transform: translateY(0);
-	    }
-	    20% {
-	        -webkit-transform: translateY(-10px);
-	                transform: translateY(-10px);
-	    }
-	    30% {
-	        -webkit-transform: translateY(-5px);
-	                transform: translateY(-5px);
-	    }
-	}
-	@keyframes bounce {
-	    0%, 20%, 50%, 80%, 100% {
-	        -webkit-transform: translateY(0);
-	                transform: translateY(0);
-	    }
-	    40% {
-	        -webkit-transform: translateY(-10px);
-	                transform: translateY(-10px);
-	    }
-	    60% {
-	        -webkit-transform: translateY(-5px);
-	                transform: translateY(-5px);
-	    }
-	}
 	</style>
 </head>
 <body style="height:100%;   /*background-color: #3ac19f;*/">
@@ -433,39 +35,33 @@
 	</section>
 	<section id="Intr" >
 		<div id="secscreen" class="screen"></div>
-		<div id="secinner">
+		<div id="secinner" class="clearfix">
+			<div id="secTitle">
+				<div id="titleinner">
+					<h2 style="color: rgba(236, 63, 233, 0.52);" id="h21" class="anime">Moe</h2>
+					<h2 style="color: rgba(107, 63, 236, 0.52);" id="h22" class="anime">Front</h2>
+				</div>
+			</div>
+			
 			<div class="row" id="secrow">
-				<div id="moeIntr" class="col-3">
-					<h2 class="anime children-title">Moe</h2>
-					<br>
-					<b id="not-gov" class="anime">
-						Moe不是教育部<br>
-						Moe不是教育部<br>
-						Moe不是教育部<br>
-						因为很重要所以要说三遍	<br>
-					</b><br>
-					<p class="anime">
-						Moe为日文中“萌(萌え)”的读音，日语“萌”（萌え）现在可以用来形容可爱的女生和男生等。Moe作为二次元属性的代表，Moefront的每个人都萌萌哒。
-					</p>
+				<div class="rowinner">
+					<div id="moeIntr" class="col-3">
+						<p class="anime">
+							Moe为日文中“萌(萌え)”的读音，日语“萌”（萌え）现在可以用来形容可爱的女生和男生等。Moe作为二次元属性的代表，Moefront的每个人都萌萌哒。
+						</p>
+					</div>
+					<div id="frontIntr" class="col-3">
+						<p class="anime">
+							Front即Front-end。意为Web开发中的前端。我们主攻前端的界面的设计和用户交互。以学习HTML、CSS 以及JavaScript、ajax，为目的组成了这个团队。
+						</p>
+					</div>	
+					<div id="mfIntr" class="col-3">
+						<p class="anime">
+							MoeFront是一个为<a href="http://www.huodongxing.com/event/4289098977400">百度前端技术学院暑期训练营</a>而成立的年轻团队。我们由6个小伙伴组成，致力于开发出我们自己的webapp。此外，我们的平均年龄只有16岁左右<del>而且都是萌萌哒的小萝莉（其实并不是</del>。
+						</p>
+					</div>
 				</div>
-				<div id="mfIntr" class="col-3">
-					<p class="anime">
-						MoeFront是一个为<a href="http://www.huodongxing.com/event/4289098977400">百度前端技术学院暑期训练营</a>而成立的年轻团队。我们由6个小伙伴组成，致力于开发出我们自己的webapp。此外，我们的平均年龄只有16岁左右<del>而且都是萌萌哒的小萝莉（其实并不是</del>。
-					</p>
-				</div>
-				<div id="frontIntr" class="col-3">
-					<h2 class="anime children-title">Front</h2>
-					<br>
-					<b id="f-in-english" class="anime" style="text-align:right;">
-						front&nbsp;&nbsp;&nbsp;&nbsp;英[frʌnt]&nbsp;美[frʌnt] <br>
-						n.	前面; 正面; 前线; 身体前部;<br>
-						adj.	前面的; 正面的; 舌前的;<br>
-						v.	面向; 在…前面; 用…作正面; 领导;<br>
-					</b><br>
-					<p class="anime">
-						Front即Front-end。意为Web开发中的前端。我们主攻前端的界面的设计和用户交互。以学习HTML、CSS 以及JavaScript、ajax，为目的组成了这个团队。
-					</p>
-				</div>				
+							
 			</div>
 			<a class="next" ><span>&#xe822;</span></a>
 		</div>
@@ -535,7 +131,6 @@
 						</div>
 					</div>
 				</a>
-				<h3 class="anime children-title center" style="text-align:center;font-family:Yanone Kaffeesatz;">We are ready...</h3>
 			</div>
 			<a class="next" ><span>&#xe822;</span></a>
 		</div>
@@ -548,7 +143,7 @@
 			<div id="like">❤<span>10086</span></div>
 			<div id="thx">谢谢你的鼓励，我们会做得更好</div>
 			<div id="no2">你的爱我们已经感受到了~</div>
-			<div id="cprt">©Copyright MoeFront 2015. Design&Coding Mainly By <a href="http://cdog.me" target="_blank">CDog</a>. Rev.IM</div>
+			<div id="cprt">©Copyright MoeFront 2015. Design&Coding Mainly By <a href="http://cdog.me" target="_blank">CDog</a>. Rev.CD</div>
 		</div>
 	</footer>
 	<script src="libs/jquery.min.js"></script>
