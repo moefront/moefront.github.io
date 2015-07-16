@@ -7,6 +7,7 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" type="text/css" href="style-mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
 	<script type="text/javascript" src="libs/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/mobile.js"></script>
 </head>
@@ -15,17 +16,16 @@
 		<canvas id="canvas" width="100%" height="100%"></canvas>
 		<a href="" style="text-decoration:none;"><h3 id="title"><span id="title-moe">Moe</span>Front</h3></a>
 		<p id="description">当<span id="des-ecy">#二次元#</span>遇到前端</p>
-		<br>
 		<div id="navibar">
-			<a id="navi-item" href="#" onclick="introduce()">团队简介</a>
-			<a id="navi-item" href="#" onclick="showmembers()">团队成员</a>
-			<a id="navi-item" href="#" onclick="likeus()">喜欢我们</a>
+			<a id="navi-item" href="#" onclick="home()"><span class="icon-home"></span></a>
+			<a id="navi-item" href="#" onclick="introduce()"><span class="icon-info"></span></a>
+			<a id="navi-item" href="#" onclick="showmembers()"><span class="icon-users"></span></a>
+			<a id="navi-item" href="#" onclick="likeus()"><span class="icon-heart"></span></a>
 		</div>
-		<br>
 		<div id="content">
 		<br><br>
-			<p class="default-text title-moe">这是窝萌团队的介绍页面（移动端版）<br>
-			<a href="index.html" class="pc-visit">如果您是电脑访问请点击这里得到最佳体验</a></p>
+			<h2 class="default-text title-moe">Welcome to MoeFront</h2><br>
+			<p style="color:#888888;font-family:Microsoft Yahei;font-weight:bold;font-size:14px;padding:8px;">MoeFront是一个为<a style="color:#000;text-decoration:none;" href="http://www.huodongxing.com/event/4289098977400">百度前端技术学院暑期训练营</a>而成立的年轻团队。我们由6个小伙伴组成，准备学习关于WebApp的开发。此外，我们的平均年龄只有16岁左右，<del>而且都是萌萌哒的小萝莉（其实并不是</del></p>
 		<br><br>
 			<p class="default-text">&copy;Copyright MoeFront Team 2015<br>Finished by all members of MoeFront</p>
 		<br><br>
