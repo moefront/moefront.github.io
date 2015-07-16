@@ -74,7 +74,6 @@
 
 	}
 	#headline {
-		display: block;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -123,7 +122,7 @@
 		position: relative;
 		background-color:   rgb(70, 187, 129);
 		top:35%;
-		height: 720px;
+		height: 650px;
 		width:100%;
 	}
 	#secinner{
@@ -302,9 +301,27 @@
 	nav ul li.cur{
 		background-color: rgba(255, 255, 255, 0.67);
 	}
+	.next span{
+		font-family: "fontello";
+	}
+	a.next{
+		position: absolute;
+		color: white;
+		bottom: 0px;
+		display: block;
+		font-size: 80px;
+		text-align: center;
+		width: 80px;
+		margin: 0 -40px;
+		left: 50%;
+		border: none;
+		cursor: pointer;
+		-webkit-animation: bounce 4s 2s infinite;
+		animation: bounce 4s 2s infinite;
+	}
 	@media screen and (max-width: 1272px){
 		#thdinner{
-			height: 950px;
+			height: 850px;
 		}
 	}
 	@media screen and (max-width: 977px){
@@ -360,6 +377,38 @@
 			font-size: 5px;
 	    }
 	}
+
+
+
+/* Used to bounce .scroll-down on home page */
+	@-webkit-keyframes bounce {
+	    0%, 10%, 25%, 40%, 50% {
+	        -webkit-transform: translateY(0);
+	                transform: translateY(0);
+	    }
+	    20% {
+	        -webkit-transform: translateY(-10px);
+	                transform: translateY(-10px);
+	    }
+	    30% {
+	        -webkit-transform: translateY(-5px);
+	                transform: translateY(-5px);
+	    }
+	}
+	@keyframes bounce {
+	    0%, 20%, 50%, 80%, 100% {
+	        -webkit-transform: translateY(0);
+	                transform: translateY(0);
+	    }
+	    40% {
+	        -webkit-transform: translateY(-10px);
+	                transform: translateY(-10px);
+	    }
+	    60% {
+	        -webkit-transform: translateY(-5px);
+	                transform: translateY(-5px);
+	    }
+	}
 	</style>
 </head>
 <body style="height:100%;   /*background-color: #3ac19f;*/">
@@ -380,6 +429,7 @@
 			<br>
 		</div>
 		<div id="too-narrow">很抱歉，PC版介绍暂时未适配您设备的屏幕<br>请访问<a href="mobile.html" style="z-index:1000;">移动版介绍页面(mobile.html)</a></div>
+		<a class="next" ><span>&#xe822;</span></a>
 	</section>
 	<section id="Intr" >
 		<div id="secscreen" class="screen"></div>
@@ -416,90 +466,93 @@
 					</p>
 				</div>				
 			</div>
+			<a class="next" ><span>&#xe822;</span></a>
 		</div>
 	</section>
 	<section id="Member">
 		<div id="thdscreen" class="screen"></div>
 		<div id="thdinner">
-		<h2 class="anime children-title">Members</h2>
-		<div id="memberlist">
-			<a href="http://cdog.me" target="_blank" class="anime">
-				<div class="memberItem clearfix">
-					<img src="avatar/cd.jpg" alt="CDog">
-					<div class="memberInfo">
-						<h2>CDog</h2>
-						<p class="skill">大学生<br>Node.js Javascript</p>
-						<p>-Always on the WAY- </p>
+			<h2 class="anime children-title">Members</h2>
+			<div id="memberlist">
+				<a href="http://cdog.me" target="_blank" class="anime">
+					<div class="memberItem clearfix">
+						<img src="avatar/cd.jpg" alt="CDog">
+						<div class="memberInfo">
+							<h2>CDog</h2>
+							<p class="skill">大学生<br>Node.js Javascript</p>
+							<p>-Always on the WAY- </p>
+						</div>
 					</div>
-				</div>
-			</a>
-			<a href="http://imim.pw" target="_blank" class="anime">
-				<div class="memberItem clearfix">
-					<img src="avatar/im.jpg" alt="CDog">
-					<div class="memberInfo">
-						<h2>吟梦</h2>
-						<p class="skill">高中生<br>PHP CSS HTML</p>
-						<p>诚心默念LL好，趁早入教妮可妮</p>
+				</a>
+				<a href="http://imim.pw" target="_blank" class="anime">
+					<div class="memberItem clearfix">
+						<img src="avatar/im.jpg" alt="CDog">
+						<div class="memberInfo">
+							<h2>吟梦</h2>
+							<p class="skill">高中生<br>PHP CSS HTML</p>
+							<p>诚心默念LL好，趁早入教妮可妮</p>
+						</div>
 					</div>
-				</div>
-			</a>
-			<a href="http://freedom.moe" target="_blank" class="anime">
-				<div class="memberItem clearfix">
-					<img src="avatar/freedom.jpg" alt="Freedom">
-					<div class="memberInfo">
-						<h2>AngelFreedom</h2>
-						<p class="skill">在职<br>PHP CSS 运维</p>
-						<p>立于浮华之世，奏于天籁之音。</p>
+				</a>
+				<a href="http://freedom.moe" target="_blank" class="anime">
+					<div class="memberItem clearfix">
+						<img src="avatar/freedom.jpg" alt="Freedom">
+						<div class="memberInfo">
+							<h2>AngelFreedom</h2>
+							<p class="skill">在职<br>PHP CSS 运维</p>
+							<p>立于浮华之世，奏于天籁之音。</p>
+						</div>
 					</div>
-				</div>
-			</a>
-			<a href="http://tyanboot.pw/" target="_blank" class="anime">
-				<div class="memberItem clearfix">
-					<img src="avatar/boot.jpg" alt="Boot">
-					<div class="memberInfo">
-						<h2>Boot</h2>
-						<p class="skill">高中生<br>PHP C++ </p>
-						<p>万物基于Arch，Arch大法好</p>
+				</a>
+				<a href="http://tyanboot.pw/" target="_blank" class="anime">
+					<div class="memberItem clearfix">
+						<img src="avatar/boot.jpg" alt="Boot">
+						<div class="memberInfo">
+							<h2>Boot</h2>
+							<p class="skill">高中生<br>PHP C++ </p>
+							<p>万物基于Arch，Arch大法好</p>
+						</div>
 					</div>
-				</div>
-			</a>
-			<a href="http://Awoer.com" target="_blank" class="anime">
-				<div class="memberItem clearfix">
-					<img src="avatar/aj.jpg" alt="aiin">
-					<div class="memberInfo">
-						<h2>Awoer</h2>
-						<p class="skill">创业者<br>PHP 服务器运维</p>
-						<p>万物基于LL，LL大法好</p>
+				</a>
+				<a href="http://Awoer.com" target="_blank" class="anime">
+					<div class="memberItem clearfix">
+						<img src="avatar/aj.jpg" alt="aiin">
+						<div class="memberInfo">
+							<h2>Awoer</h2>
+							<p class="skill">创业者<br>PHP 服务器运维</p>
+							<p>万物基于LL，LL大法好</p>
+						</div>
 					</div>
-				</div>
-			</a>
-			<a href="http://sihua.xyz/" target="_blank" class="anime">
-				<div class="memberItem clearfix">
-					<img src="avatar/sh.jpg" alt="SiHua">
-					<div class="memberInfo">
-						<h2>祀画</h2>
-						<p class="skill">高中生<br>PHP HTML</p>
-						<p>具有多种属性，目前正在学习前端与PHP.</p>
+				</a>
+				<a href="http://sihua.xyz/" target="_blank" class="anime">
+					<div class="memberItem clearfix">
+						<img src="avatar/sh.jpg" alt="SiHua">
+						<div class="memberInfo">
+							<h2>祀画</h2>
+							<p class="skill">高中生<br>PHP HTML</p>
+							<p>具有多种属性，目前正在学习前端与PHP.</p>
+						</div>
 					</div>
-				</div>
-			</a>
-			<div>
+				</a>
+				<h3 class="anime children-title center">We are ready...</h3>
 			</div>
-			<h3 class="anime children-title center">We are ready...</h3>
-		</section>
-		<footer id="LikeScr">
-			<div id="footers" class="screen"></div>
-			<div id="footinner" >
-				<h2 class="children-title">Do You Like Us?</h2>
-				<div id="like">❤<span>10086</span></div>
-				<div id="thx">谢谢你的鼓励，我们会做得更好</div>
-				<div id="no2">你的爱我们已经感受到了~</div>
-				<div id="cprt">©Copyright MoeFront 2015. Design&Coding Mainly By <a href="http://cdog.me" target="_blank">CDog</a>. Rev.CD</div>
-			</div>
-		</footer>
-		<script src="libs/jquery.min.js"></script>
-		<script src="libs/ck.js"></script>
-		<script src="libs/script.js"></script>
-		<script src="libs/OOversion.js"></script>
-	</body>
+			<a class="next" ><span>&#xe822;</span></a>
+		</div>
+			
+	</section>
+	<footer id="LikeScr">
+		<div id="footers" class="screen"></div>
+		<div id="footinner" >
+			<h2 class="children-title">Do You Like Us?</h2>
+			<div id="like">❤<span>10086</span></div>
+			<div id="thx">谢谢你的鼓励，我们会做得更好</div>
+			<div id="no2">你的爱我们已经感受到了~</div>
+			<div id="cprt">©Copyright MoeFront 2015. Design&Coding Mainly By <a href="http://cdog.me" target="_blank">CDog</a>. Rev.CD</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/ck.js"></script>
+	<script src="libs/script.js"></script>
+	<script src="libs/OOversion.js"></script>
+</body>
 	</html>

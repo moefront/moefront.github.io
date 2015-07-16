@@ -4,11 +4,13 @@ $(function(){
 
 	$("#fstscreen").height(window.innerHeight);
 	//init animation
-	var $secinner=$("#secscreen");
+	var $secinner=$("#Intr");
 	$secinner.isShone=false;
 
-	var $thdinner=$("#thdscreen");
+	var $thdinner=$("#Member");
 	$thdinner.isShone=false;
+	var $footer=$("#LikeScr");
+	var $fstscreen=$("#fstscreen");
 
 
 
@@ -61,6 +63,22 @@ $(function(){
 		if($(document).scrollTop() > $thdinner.offset().top && !$thdinner.isShone) {
 			showMember();
 		}
+		if($(document).scrollTop()+window.innerHeight == ($footer.offset().top+$footer.height())) {
+			$("nav a[href=#LikeScr]").parent().addClass("cur").siblings().removeClass("cur");
+			
+		}
+		if($(document).scrollTop() >=0 && $(document).scrollTop() < $fstscreen.height()) {
+			$("nav a[href=#fstscreen]").parent().addClass("cur").siblings().removeClass("cur");
+			
+		}
+		if($(document).scrollTop() >= $secinner.offset().top && $(document).scrollTop() < $secinner.offset().top+$secinner.height()) {
+			$("nav a[href=#Intr]").parent().addClass("cur").siblings().removeClass("cur");
+			
+		}
+		if(($(document).scrollTop() >= $thdinner.offset().top && $(document).scrollTop() < $thdinner.offset().top+$thdinner.height()) && !($(document).scrollTop()+window.innerHeight == ($footer.offset().top+$footer.height()))) {
+			$("nav a[href=#Member]").parent().addClass("cur").siblings().removeClass("cur");
+			
+		}
 	});
 
 
@@ -100,36 +118,26 @@ $(function(){
 	}
 	$("#like").click(function(){
 		doLike();
-	})
-	$("#headlines").animate({width:"80%"});
-
-	//Navbar Function
-	var navH = $("#secscreen").offset().top;
-   	 //滚动条事件
-    	$(window).scroll(function(){
-    		//获取滚动条的滑动距离
-    		var scroH = $(this).scrollTop();
-   		 //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，执行的函数或代码
-    		if(scroH>=navH){
-    			$("#header-nav").fadeIn(500);
-  		  }
-    		//否则，执行以下代码
-    		else if(scroH<navH)
-    		{
-    			$("#header-nav").css({"display":"none"});
-   		 }
 	});
 
-});
+	$("#fstscreen a.next").click(function(){
+		$("nav a[href=#Intr]").click();
+	});
+	$("#Intr a.next").click(function(){
+		$("nav a[href=#Member]").click();
+	});
+	$("#Member a.next").click(function(){
+		$("nav a[href=#LikeScr]").click();
+	});
 
-jQuery(document).ready(function($) {
-	$(".scroll").click(function(event){		
+
+	$("nav a").click(function(event){		
 		event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			$('html,body').animate({scrollTop:$(this.hash).offset().top+250},800);
+		});
+	$("nav a[href=#fstscreen]").click(function(event){		
+		event.preventDefault();
+			$('html,body').animate({scrollTop:0},800);
 		});
 });
 
-var imwidth = document.body.clientWidth;
-console.log("当前屏幕宽度："+imwidth);
-if(imwidth <= 720)
-	window.location.href="mobile.html";
