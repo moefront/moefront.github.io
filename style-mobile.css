@@ -12,7 +12,7 @@ body{
 #title{
 	font-size:56px;
 	text-align: center;
-	padding-top:10%;
+	padding-top:20%;
 	color:#fff;
 	margin-bottom: 10px;
 }
@@ -42,11 +42,12 @@ body{
 #navibar{
 	text-align: center;
 	position: fixed;
-	bottom: 0px;
+	top: 0px;
 	padding:10px;
 	background-color: #55BBFF;
 	width: 100%;
 	z-index:999;
+	font-size:24px;
 }
 #navi-item:hover{
 	background-color: #00CCFF;
