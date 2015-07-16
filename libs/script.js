@@ -17,22 +17,15 @@ $(function(){
 	//anime functions
 	function showIntr(){
 		$secinner.isShone=true;
-		$("#moeIntr h2").fadeIn(function(){
-			$("#moeIntr b").fadeIn(function(){
+		$("h2#h21").fadeIn(function(){
+			$("h2#h22").fadeIn(function(){
 				$("#moeIntr p").fadeIn(function(){
-					$("#frontIntr h2").fadeIn(function(){
-						$("#frontIntr p").fadeIn(function(){
-							$("#frontIntr b").fadeIn(function(){
-								$("#mfIntr p").fadeIn();
-
-							});
-
-						});
+					$("#frontIntr p").fadeIn(function(){
+						$("#mfIntr p").fadeIn();
 					});
 				});
-
 			});
-		});
+		})
 		console.log("Intr Show Time!");
 	}
 
@@ -140,4 +133,3 @@ $(function(){
 			$('html,body').animate({scrollTop:0},800);
 		});
 });
-
