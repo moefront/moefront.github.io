@@ -77,7 +77,7 @@ $(function(){
 
 	//Like
 	$.ajax({
-		url:"http://front.moe/like.php?cmd=get",
+		url:"//moefront-app.smartgslb.com/like.php?cmd=get",
 		dataType:"json",
 		success:function(data){
 			$("#like span").html(data.likes);
@@ -90,10 +90,10 @@ $(function(){
 		var $like_num=$("#like span");
 		if ($.cookie("moemoeda")){
 			$("#no2").fadeIn();
-                        setTimeout( function(){$("#no2").fadeOut();},3000 );
+			setTimeout( function(){$("#no2").fadeOut();},3000 );
 		}else{
 			$.ajax({
-				url:"http://front.moe/like.php?cmd=add",
+				url:"//moefront-app.smartgslb.com/like.php?cmd=add",
 				dataType:"json",
 				success:function(data){
 					$("#like span").html(data.likes);
