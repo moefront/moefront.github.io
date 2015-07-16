@@ -90,6 +90,7 @@ $(function(){
 		var $like_num=$("#like span");
 		if ($.cookie("moemoeda")){
 			$("#no2").fadeIn();
+                        setTimeout( function(){$("#no2").fadeOut();},3000 );
 		}else{
 			$.ajax({
 				url:"http://front.moe/like.php?cmd=add",
