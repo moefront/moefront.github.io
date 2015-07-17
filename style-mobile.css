@@ -36,6 +36,7 @@ body{
 #navi-item{
 	text-decoration: none;
 	border: 1px;
+	margin: 1px;
 	color:#eee;
 	padding:10px;
 }
