@@ -282,6 +282,7 @@
 		font-size: 36px;50px;
 	}
 	nav ul li{
+		margin: 10px;
 		display: block;
 		padding: 15px;
 	}
