@@ -79,5 +79,4 @@ function getwidth(){
 
 $(document).ready(function(){
 	getwidth();
-	$("#display").fadeIn(500);
 });
