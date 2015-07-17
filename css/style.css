@@ -348,6 +348,9 @@
 	    #too-narrow{
 	    	display: block;
 	    }
+	    #Intr,#Menber,#Likescr,nav{
+	    	display: none;
+	    }
 	}
 
 	
