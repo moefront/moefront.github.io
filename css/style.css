@@ -348,7 +348,7 @@
 	    #too-narrow{
 	    	display: block;
 	    }
-	    #Intr,#Menber,#Likescr,nav{
+	    #Intr,#Member,#Likescr,nav{
 	    	display: none!important;
 	    }
 	}
