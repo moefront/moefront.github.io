@@ -1,184 +1,70 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans" style="height:100%;">
+<html>
 <head>
-
-	<meta charset="utf-8">
-	<title>MoeFront - We are Here</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="HandheldFriendly" content="true">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="css/fontello.css">
-	<link rel="stylesheet" href="css/style.css">
-	<style>
-	
-	</style>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="moefront.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet">
+	<title>MoeFront - We are Here.</title>
 </head>
-<body style="height:100%;   /*background-color: #3ac19f;*/">
-	<nav>
-		<ul>
-			<li class="cur"><a href="#fstscreen" ><span>&#xe81e;</span></a></li>
-			<li><a href="#Intr"><span>&#xe821;</span></a></li>
-			<li><a href="#Member"><span>&#xe81f;</span></a></li>
-			<li><a href="#LikeScr"><span>&#xe820;</span></a></li>
-		</ul>
-	</nav>
-	<section id="fstscreen" >
-		<canvas id="canvas" ></canvas>
-
-		<div id="headline" class="anime">
-			<h1 id="title" class="headlines"><span class="moe">MoeFront</span> Studio</h1>
-			<h2 id="subtitle" class="headlines">当<span class="moe">#二次元#</span>遇到前端</h2>
-			<br>
+<body>
+	<div id="first" class="screen">
+		<div class="mask"></div>
+		<div class="fir-bg"></div>
+		<div id="title-container">
+			<h1 class="moefront">
+				<span class="moe">Moe</span><span class="front">Front</span> <span class="studio">Studio</span>
+			</h1>
+			<p class="metting">当 <span class="ecy">#二次元#</span> 遇到 <span class="frontend">#前端#</span></p>
 		</div>
-		<div id="too-narrow" style="position:fixed;top:0;width:100%;background-color:#fff;opacity:0.7;z-index:999;height:40px;padding:10px;">很抱歉，PC版介绍暂时未适配您设备的屏幕<br>请访问<a href="mobile.html" style="z-index:1000;">移动版介绍页面(mobile.html)</a></div>
-		<a class="next" ><span>&#xe822;</span></a>
-	</section>
-	<section id="Intr" >
-		<div id="secscreen" class="screen"></div>
-		<div id="secinner" class="clearfix">
-			<div id="secTitle">
-				<div id="titleinner">
-					<h2 style="color: rgba(236, 63, 233, 0.52);" id="h21" class="anime">Moe</h2> 
-					<h2 style="color: rgba(107, 63, 236, 0.52);padding-left:50px;" id="h22" class="anime">Front</h2>
+		<div id="hoverbox">
+			<div class="hoverbox-text"></div>
+		</div>
+		<!--<p class="to-next">Next <i class="fa fa-angle-down"></i></p>-->
+	</div>
+	<div id="second" class="screen">
+		<!--<h1 class="members-title">Members</h1>-->
+		<div class="member-box">
+			<div class="member-left">
+				<li class="member-tag" tag="cdog"><img src="https://moefront-app.smartgslb.com/avatar/cd.jpg" class="member-avatar"> <p class="member-summary">CDog<br/><span class="desc">Always on the way.</span></p></li>
+				<li class="member-tag" tag="kokororin"><img src="https://gravatar-ssl.moefont.com/avatar/06a2950d128ec9faf155e28d9e889baa?s=100&r=G&d=" class="member-avatar"> <p class="member-summary">空樱酱<br/><span class="desc">南ことりはわたしの嫁</span></p></li>
+				<li class="member-tag" tag="freedom"><img src="https://moefront-app.smartgslb.com/avatar/freedom.jpg" class="member-avatar"> <p class="member-summary">立华<br/><span class="desc">立于浮华之世，奏于天籁之音。</span></p></li>
+				<li class="member-tag" tag="miny"><img src="https://q1.qlogo.cn/g?b=qq&nk=808039&s=100" class="member-avatar"> <p class="member-summary">Miny<br/><span class="desc">超级单纯的 Miny 酱</span></p></li>
+				<li class="member-tag" tag="sihua"><img src="https://moefront-app.smartgslb.com/avatar/sh.jpg" class="member-avatar"> <p class="member-summary">祀画<br/><span class="desc">具有多种属性</span></p></li>
+				<li class="member-tag" tag="tyanboot"><img src="https://moefront-app.smartgslb.com/avatar/boot.jpg" class="member-avatar"> <p class="member-summary">Tyan Boot<br/><span class="desc">万物基于 Arch，Arch 大法好！</span></p></li>
+				<li class="member-tag" tag="track"><img src="https://q1.qlogo.cn/g?b=qq&nk=2935068220&s=100" class="member-avatar"> <p class="member-summary">Track &amp; Boom<br/><span class="desc">QAQ</span></p></li>
+				<li class="member-tag" tag="yume"><img src="https://api.imim.pw/weiboAvatar" class="member-avatar"> <p class="member-summary">吟梦<br/><span class="desc">叶え!私たちの梦——</span></p></li>
+			</div>
+			<div class="member-right">
+				<div class="member-container">
+					<div class="member-detail-left">
+						<h1 class="member-name"></h1>
+						<p class="member-desc"></p>
+						<p class="member-identity"><i class="fa fa-user"></i> <span></span></p>
+						<p class="member-github"><i class="fa fa-github"></i> <span></span></p>
+						<p class="member-link"><i class="fa fa-external-link"></i> <span></span></p>
+						<p class="member-state"><i class="fa fa-flag"></i> <span></span></p>
+						<p class="member-status"><i class="fa fa-space-shuttle"></i> <span></span></p>
+						<p class="member-email"><i class="fa fa-envelope"></i> <span></span></p>
+					</div>
+					<div class="member-detail-right">
+						<img src="" width="200px">
+					</div>
 				</div>
 			</div>
-			
-			<div class="row" id="secrow">
-				<div class="rowinner">
-					<div id="moeIntr" class="col-3">
-						<p class="anime">
-							Moe为日文中“萌(萌え)”的读音，日语“萌”（萌え）现在可以用来形容可爱的女生和男生等。Moe作为二次元属性的代表，Moefront的每个人都萌萌哒呦。
-						</p>
-					</div>
-					<div id="frontIntr" class="col-3">
-						<p class="anime">
-							Front即Front-end，意为Web开发中的前端。我们主攻前端的界面的设计和用户交互。以学习HTML、CSS 以及JavaScript、ajax 为目的组成了这个团队。
-						</p>
-					</div>	
-					<div id="mfIntr" class="col-3">
-						<p class="anime">
-							MoeFront是一个为<a href="http://www.huodongxing.com/event/4289098977400">百度前端技术学院暑期训练营</a>而成立的年轻团队。我们由6个小伙伴组成，致力于开发出我们自己的webapp。此外，我们的平均年龄只有16岁左右<del>而且都是萌萌哒的小萝莉（其实并不是</del>。
-						</p>
-					</div>
-				</div>
-							
-			</div>
-			<a class="next" ><span>&#xe822;</span></a>
 		</div>
-	</section>
-	<section id="Member">
-		<div id="thdscreen" class="screen"></div>
-		<div id="thdinner">
-			<h2 class="anime children-title">Members</h2>
-			<div id="memberlist">
-				<a href="http://cdog.me" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="//moefront-app.smartgslb.com/avatar/cd.jpg" alt="CDog">
-						<div class="memberInfo">
-							<h2>CDog</h2>
-							<p class="skill">在职生<br>Node.js Javascript</p>
-							<p>-Always on the WAY- </p>
-						</div>
-					</div>
-				</a>
-				<a href="http://imim.pw" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="https://api.imim.pw/weiboAvatar" alt="Yume">
-						<div class="memberInfo">
-							<h2>吟梦</h2>
-							<p class="skill">高中生<br>PHP CSS HTML</p>
-							<p>叶え!私たちの梦――</p>
-						</div>
-					</div>
-				</a>
-				<a href="http://freedom.moe" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="//moefront-app.smartgslb.com/avatar/freedom.jpg" alt="Freedom">
-						<div class="memberInfo">
-							<h2>AngelFreedom</h2>
-							<p class="skill">在职<br>PHP CSS 运维</p>
-							<p>立于浮华之世，奏于天籁之音。</p>
-						</div>
-					</div>
-				</a>
-				<a href="http://tyanboot.pw/" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="//moefront-app.smartgslb.com/avatar/boot.jpg" alt="Boot">
-						<div class="memberInfo">
-							<h2>Boot</h2>
-							<p class="skill">高中生<br>PHP C++ </p>
-							<p>万物基于Arch，Arch大法好！</p>
-						</div>
-					</div>
-				</a>
-				<a href="http://Awoer.com" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="//moefront-app.smartgslb.com/avatar/aj.jpg" alt="aiin">
-						<div class="memberInfo">
-							<h2>Awoer</h2>
-							<p class="skill">创业者<br>PHP 服务器运维</p>
-							<p>万物基于LL，LL大法好！</p>
-						</div>
-					</div>
-				</a>
-				<a href="http://sihua.xyz/" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="//moefront-app.smartgslb.com/avatar/sh.jpg" alt="SiHua">
-						<div class="memberInfo">
-							<h2>祀画</h2>
-							<p class="skill">高中生<br>PHP CSS HTML</p>
-							<p>具有多种属性，目前正在学习CSS与PHP。</p>
-						</div>
-					</div>
-				</a>
-				<a href="https://kotori.love/" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="https://gravatar-ssl.moefont.com/avatar/06a2950d128ec9faf155e28d9e889baa?s=100&r=G&d=" alt="Sora">
-						<div class="memberInfo">
-							<h2>空樱酱</h2>
-							<p class="skill">在职<br>全能</p>
-							<p>南ことりはわたしの嫁</p>
-						</div>
-					</div>
-				</a>
-				<a href="#" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="" alt="" style="display:none;">
-						<div class="memberInfo">
-							<h2> </h2>
-							<p class="skill"> <br> </p>
-							<p> </p>
-						</div>
-					</div>
-				</a>
-				<a href="#" target="_blank" class="anime">
-					<div class="memberItem clearfix">
-						<img src="https://q1.qlogo.cn/g?b=qq&nk=2935068220&s=100" alt="Boom">
-						<div class="memberInfo">
-							<h2>Track & Boom</h2>
-							<p class="skill">不明<br> 全能</p>
-							<p>QAQ</p>
-						</div>
-					</div>
-				</a>					
-			</div>
-			<a class="next" ><span>&#xe822;</span></a>
-		</div>
-			
-	</section>
-	<footer id="LikeScr">
-		<div id="footers" class="screen"></div>
-		<div id="footinner" >
-			<h2 class="children-title">Do You Like Us?</h2>
-			<div id="like">❤<span>10086</span></div>
-			<div id="thx">谢谢你的鼓励，我们会做得更好！</div>
-			<div id="no2">你的爱我们已经感受到了~</div>
-			<div id="cprt">©Copyright MoeFront 2015. Design&Coding Mainly By <a href="http://cdog.me" target="_blank">CDog</a>. </div>
-		</div>
-	</footer>
-	<script src="//moefront-app.smartgslb.com/libs/jquery.min.js"></script>
-	<script src="//moefront-app.smartgslb.com/libs/ck.js"></script>
-	<script src="//moefront-app.smartgslb.com/libs/script.js"></script>
-	<script src="//moefront-app.smartgslb.com/libs/OOversion.js"></script>
+	</div>
+	<div id="third" class="screen">
+		<h1 style="margin-top: 10%;text-align: center;font-weight: normal;color:#fff;font-size:56px;">Do you like us?</h1>
+		<p>如果你喜欢我们就请给我们一个赞吧 _( : з」∠)_</p>
+		<p><div id="like">❤<span>2333</span></div></p>
+		<p id="thx"></p>
+		<div class="copyright">&copy;2015-2016 MoeFront Studio / Finished by members of MoeFront with ❤. <a style="color:#eee;" href="old/index.html"> 访问上个版本的MoeFront</a></div>
+	</div>
+	<script type="text/javascript" src="moefront.js"></script>
+	<script>
+		$(".moefront").slideDown(1000,function(){
+			$(".metting").slideDown();
+		});
+	</script>
 </body>
-	</html>
+</html>
