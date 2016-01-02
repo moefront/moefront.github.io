@@ -62,7 +62,8 @@ body{
 	position: absolute;
 	top:40%;
 	transform: translate3D(0,-50%,0);
-	-webkit-transform: translate3D(0,-50%,0);	
+	-webkit-transform: translate3D(0,-50%,0);
+	z-index: 999;	
 }
 #first{
 	/*background-color: rgb(20,222,239);*/
@@ -74,6 +75,16 @@ body{
 	height: 100%;
 	top: 0px;
 	background-color: rgba(255,255,255,0.4);
+}
+.fir{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(225,225,225,0.4);
+	z-index: 100;
+
 }
 .fir-bg{
 	background-image: url("background.jpg");
@@ -87,6 +98,7 @@ body{
 	-webkit-filter:blur(6px);
 	-moz-filter:blur(6px);
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=false);
+	z-index: 50;
 
 }
 .metting{
