@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+@import url("https://cdn.moefont.com/fonts/css?family=Poiret+One");
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,  p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1,h2,h3,h4{
+	margin:0px;
+}
+
+a{
+	color: rgb(42, 130, 161);
+	text-decoration: none;
+	border-bottom: 1px solid rgb(42, 130, 161);
+	border-bottom-style: dashed;
+}
+
+html{
+	height: 100%!important;
+}
+body{
+	height: 100%;
+	margin:0px;
+	font-family: "Raleway","Microsoft Yahei", Helvetica, sans-serif;
+}
+.screen{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.moefront{
+	font-size: 6em;
+	text-align: center;
+	display: none;
+	font-weight: bold;
+	font-family: "Poiret One";
+}
+.moe,.front{
+	color: #e80f69;
+	cursor: pointer;
+}
+.studio{
+	color:#fafafa;
+	cursor: pointer;
+}
+.to-next{
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	width: 100%;
+}
+#title-container{
+	width: 100%;
+	position: absolute;
+	top:40%;
+	transform: translate3D(0,-50%,0);
+	-webkit-transform: translate3D(0,-50%,0);	
+}
+#first{
+	/*background-color: rgb(20,222,239);*/
+	position: relative;
+}
+.mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background-color: rgba(255,255,255,0.4);
+}
+.fir-bg{
+	background-image: url("background.jpg");
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	-webkit-filter:blur(6px);
+	-moz-filter:blur(6px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=false);
+
+}
+.metting{
+	font-size: 24px;
+	margin:30px 10px;
+	text-align: right;
+	padding-right:23%;
+	color: #fff;
+	display: none;
+}
+.ecy, .frontend{
+	color: rgb(153,120,188);
+}
+#hoverbox{
+	position: absolute;
+	bottom: 19%;
+	width: 100%;
+}
+.hoverbox-text{
+	margin:0px 25%;
+	padding:30px 0px;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	line-height: 1.4;
+}
+
+
+#second{
+	background-color: rgb(29,157,115);
+}
+.members-title{
+	text-align: center;
+	font-family: "Poiret One";
+	padding-top: 10px;
+	color: #fafafa;
+	font-size: 36px;
+}
+.member-box{
+	/*background-color: #fff;*/
+	width: 85%;
+	height: 90%;
+	margin:20px auto;
+}
+.member-avatar{
+	width: 55px;
+	border-radius: 360px;
+	display: inline-block;
+	float: left;
+}
+.member-tag{
+	list-style: none;
+	padding:8px;
+	margin:5px;
+	-webkit-transition:0.6s all;
+	display: none;
+}
+.member-tag:hover{
+	background-color: rgba(51, 51, 51, 0.08);
+}
+.member-summary{
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-left: 10px;
+	color: #fff;
+	cursor: pointer;
+}
+.desc{
+	font-size: 16px;
+	padding-top:10px;
+	color: #eee;
+}
+.member-left{
+	width: 30%;
+	display: inline-block;
+	float: left;
+}
+.member-right{
+	/*display: inline-block;*/
+	width: 68%;
+	height: 100%;
+	background-color: #fafafa;
+	padding:10px 10px;
+	font-family: "Poiret One","Microsoft Yahei";
+	color:#666;
+	display: none;
+}
+.member-name{
+	font-size: 46px;
+	font-family: "Raleway";
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.member-desc{
+	font-size:28px!important;
+}
+.member-detail-left{
+	padding:30px;
+	float: left;
+}
+.member-detail-left p, .member-detail-left h1{
+	padding:10px;
+}
+.member-detail-left p{
+	font-size:20px;
+}
+.member-desc{
+	color: #888;
+	font-size: 20px!important;
+}
+span a{
+	color: rgb(29,157,115);
+	font-weight: bold;
+	border-bottom: 1px solid  rgb(29,157,115);
+	border-bottom-style: dashed;
+}
+i{
+	margin-right: 10px;
+}
+.member-detail-right{
+	text-align: right;
+	padding:50px;
+
+}
+.member-detail-right img{
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px grey;
+	-webkit-transition:all 1s;
+}
+.member-detail-right img:hover{
+	box-shadow: 0px 0px 15px grey;
+}
+#third{
+	background-color: rgb(236,112,104);
+	position: relative;
+}
+#third p{
+	text-align: center;
+	color: #fff;
+	margin-top: 50px;
+	font-size: 24px;
+}
+#like{
+	padding:20px;
+	margin:0 auto;
+	font-size: 40px;
+	width: 15%;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition:all 0.6s;
+}
+#like:hover{
+	background: rgb(250, 69, 69);
+}
+.copyright{
+	position: absolute;
+	bottom: 0%;
+	padding:10px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(51, 51, 51, 0.08);
+	color:#fff;
+}
+#thx, #no2{
+	display: none;
+}

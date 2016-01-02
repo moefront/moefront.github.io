@@ -111,7 +111,7 @@
 		position: relative;
 		background-color:   rgb(70, 187, 129);
 		top:35%;
-		height: 650px;
+		height: 850px;
 		width:100%;
 	}
 	#secinner{
@@ -316,7 +316,7 @@
 	}
 	@media screen and (max-width: 1272px){
 		#thdinner{
-			height: 850px;
+			height: 1200px;
 		}
 	}
 	@media screen and (max-width: 977px){
