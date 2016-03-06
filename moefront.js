@@ -892,6 +892,17 @@ function overflowingAncestor(el) {
   		"status":"高中生",
   		"email":"i#imim.pw"
   	},  
+  	"elven":{
+  		"name":"欢欢",
+  		"avatar":"https://avatars3.githubusercontent.com/u/11287864?v=3&s=460",
+  		"identity":"前端 & 后端",
+  		"github":"Elvenisboy",
+  		"desc":"来自喵星人的大触",
+  		"links":"https://9turn.com/",
+  		"state":"Unknown",
+  		"status":"大学生",
+  		"email":"mon.samuel@qq.com"
+  	}
   };
 
   var mc = $(".member-right");
