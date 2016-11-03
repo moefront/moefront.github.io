@@ -862,12 +862,12 @@ function overflowingAncestor(el) {
   	"tyanboot":{
   		"name":"Tyan Boot",
   		"avatar":"https://moefront-app.smartgslb.com/avatar/boot.jpg",
-  		"identity":"后端 & 服务器运维",
+  		"identity":"伪全栈",
   		"desc":"炒鸡碉堡的大触",
   		"github":"tyan-boot",
   		"links":"https://www.tyanboot.pw",
   		"state":"Shanxi, China",
-  		"status":"高中生",
+  		"status":"大学",
   		"email":"i#tyanboot.pw"
   	},
   	"track":{
