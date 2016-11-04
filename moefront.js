@@ -817,7 +817,7 @@ function overflowingAncestor(el) {
   	},
   	"kokororin":{
   		"name":"空樱酱",
-  		"avatar":"https://gravatar-ssl.moefont.com/avatar/06a2950d128ec9faf155e28d9e889baa?s=100&r=G&d=",
+  		"avatar":"//sdn.geekzu.org/avatar/06a2950d128ec9faf155e28d9e889baa?s=100&r=G&d=",
   		"identity":"全能",
   		"github":"kokororin",
   		"desc":"是萌妹纸就算了，还是触！",
