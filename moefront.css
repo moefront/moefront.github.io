@@ -242,6 +242,9 @@ i{
 #like:hover{
 	background: rgb(250, 69, 69);
 }
+.social-share{
+     margin:0px;
+}
 .copyright{
 	position: absolute;
 	bottom: 0%;
