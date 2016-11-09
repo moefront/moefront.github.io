@@ -244,6 +244,15 @@ i{
 }
 .social-share{
      margin:0px;
+    width: 50%;
+    height: 15%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 .copyright{
 	position: absolute;
