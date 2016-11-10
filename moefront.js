@@ -817,7 +817,7 @@ function overflowingAncestor(el) {
   	},
   	"kokororin":{
   		"name":"空樱酱",
-  		"avatar":"//sdn.geekzu.org/avatar/06a2950d128ec9faf155e28d9e889baa?s=100&r=G&d=",
+  		"avatar":"https://secure.gravatar.com/avatar/06a2950d128ec9faf155e28d9e889baa?s=256&r=G&d=",
   		"identity":"全能",
   		"github":"kokororin",
   		"desc":"是萌妹纸就算了，还是触！",
@@ -883,7 +883,7 @@ function overflowingAncestor(el) {
   	},
   	"yume":{
   		"name":"吟梦",
-  		"avatar":"https://api.imim.pw/weiboAvatar",
+  		"avatar":"https://secure.gravatar.com/avatar/3d19f6408d50f41e066b23f05bb9c6ad?s=256&r=G&d=",
   		"identity":"前端 & 后端",
   		"github":"kirainmoe",
   		"desc":"其实是什么都不会的萌新",
