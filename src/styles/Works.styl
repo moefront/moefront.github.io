@@ -1,0 +1,105 @@
+.moefront-works
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  overflow: auto
+  background: linear-gradient(135deg, #F9A01B 0%, #F9A01B 30%, #ffff2e 100%) fixed
+
+.works-title
+  text-align: center
+  color: #fff
+  margin: 0px
+  padding: 25px 0px 10px 0px  
+  font-family: 'Satisfy'
+  font-size: 56px
+
+.works-description
+  width: 100%
+  color: darken(#fff, 10%)
+  font-size: 22px
+  text-align: center
+  margin: 0px
+  padding: 5px 0px
+  font-family: 'Cambria'
+  font-style: italic
+
+.works-container
+  flex: 1
+  position: relative
+  margin: 0 60px
+  padding: 20px 40px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  align-items: center
+
+.works-item
+  width: 140px
+  height: 140px
+  display: inline-block
+  border-radius: 50%
+  overflow: hidden
+  opacity: .9
+  margin: 10px 20px
+  transition: .3s all linear
+  
+  .project-container
+    width: 100%
+    height: 100%
+    background: #fff
+    position: relative
+      
+    img
+      width: 100%
+      height: 100%
+      
+    .project-details
+      width: 100%
+      height: 100%
+      background: inherit
+      display: flex
+      align-items: center
+      position: absolute
+      top: 0px
+      left: 0px
+      text-align: center
+      cursor: pointer
+      padding: 15px
+      opacity: 0
+      transition: .3s all linear
+      
+    .project-name
+      color: #fff
+      padding: 60px 10px
+      margin: 0px
+      text-align: center
+      word-break: break-all
+
+    &:hover .project-details
+      opacity: .9   
+
+    .project-description
+      color: #fff
+      margin: 0px
+      font-size: 14px
+      
+.works-item.item-has-icon
+  .project-description
+    color: #000
+
+@media screen and (max-width: 760px)
+  .works-container
+    margin: 0px 0px 60px 0px
+  .project-name
+    padding: 40px 5px!important
+
+@media screen and (max-width: 500px)
+  .works-container
+    display: block
+    text-align: center
+  .works-item
+    width: 110px
+    height: 110px
+    .project-description
+      font-size: 8px

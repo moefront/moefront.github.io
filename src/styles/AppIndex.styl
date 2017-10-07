@@ -1,0 +1,160 @@
+linearGradientSetting() {
+  background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes blink {
+  0% { opacity: 0 }
+  50% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.fade-exit {
+  z-index: -1;
+  transition: all 500ms ease-in;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+*
+  box-sizing: border-box
+
+html, body, #root, .moefront
+  margin: 0px
+  width: 100%
+  height: 100%
+  overflow: hidden
+  font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei'
+
+.moefront
+  position: relative
+  
+.moefront > div:first-child
+  width: 100%
+  height: 100%
+  
+.index-background
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0px
+  left: 0px
+  z-index: -2
+  transform: scale(1.1)  
+  transition: .5s all ease-in
+    
+.moefront-page-container  
+  width: 100%
+  height: 100%
+
+.moefront-index
+  width: 100%
+  height: 100%
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  overflow: hidden
+  
+  canvas
+    position: absolute
+    z-index: -1
+    
+  .index-container
+    width: 100%
+    height: 35%
+    min-height: 180px
+    text-align: center
+    // position: absolute
+    // top: 50%
+    // transform: translateY(-50%)
+    
+  .index-logo
+    width: 150px
+    height: 150px
+    display: inline-block
+    vertical-align:top      // 顶部对齐
+    border-radius: 50%
+    transition: .5s all ease-in-out
+    
+    &:hover
+      transform: rotate(360deg)
+
+  .index-text
+    display: inline-block
+    vertical-align:top
+    height: 150px
+    line-height: 75px
+    margin-left: 25px
+    
+  .index-title
+    font-size: 76px
+    margin: 0px
+    font-family: 'Satisfy'
+    
+    .word-container
+      display: inline-block
+        
+    .word-moe
+      background: linear-gradient(90deg, #e81e62, #f7bacf)
+      cursor: pointer
+      linearGradientSetting()      
+
+    .word-studio
+      background: linear-gradient(90deg, #fff, darken(#eee, 10%))
+      cursor: pointer
+      margin-left: 16px
+      linearGradientSetting()
+  
+  .index-description
+    font-size: 22px
+    color: #fff
+    
+  .index-stress
+    background: linear-gradient(90deg, #3e50b4, #2195f2)
+    font-weight: bold
+    margin: 0px 5px
+    linearGradientSetting()
+  
+  .index-terminal
+    font-size: 18px
+    color: #fff
+    font-family: 'Menlo', 'Monaco', 'Ubuntu Mono', 'Consolas'
+    
+    .terminal-cursor
+      color: #fff
+      opacity: 1;
+      font-weight: 100;
+      margin-left: 3px
+      -webkit-animation: blink 1.75s infinite;
+      -moz-animation: blink 1.75s infinite;
+      -ms-animation: blink 1.75s infinite;
+      -o-animation: blink 1.75s infinite;
+      animation: blink 1.75s infinite;
+
+@media screen and (max-width: 650px)
+  .index-container
+    height: 70%!important
+  .index-text
+    margin-top: 30px

@@ -1,0 +1,51 @@
+.moefront-navigator
+  width: 60px
+  position: fixed
+  left: 0px
+  padding: 15px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 10
+  text-align: center
+  
+  a
+    color: #fff
+    text-decoration: none
+    font-size: 28px
+    margin: 20px 0px
+    display: block
+    transition: .3s all ease-in-out
+  
+    &.nav-home:hover
+      color: #2196f3!important
+    &.nav-members:hover
+      color: #4bae4f!important
+    &.nav-works:hover
+      color: #feea3b!important
+    &.nav-like:hover
+      color: #fe4080!important
+  
+  .nav-like
+    font-size: 26px     // fuck font-awesome
+    
+.nav-item-active
+  pointer-events: none
+
+.moefront.page-like > .moefront-navigator > a
+  color: #000
+.moefront.page-like > .moefront-navigator.color-white > a
+  color: #fff
+      
+@media screen and (max-width: 760px)
+  .moefront-navigator
+    width: 100%
+    height: 80px
+    line-height: 50px
+    top: calc(100% - 80px)
+    bottom: 0px!important
+    transform: translateY(0px)
+    background: rgba(0, 0, 0, .3)
+    
+    a
+      display: inline-block
+      margin: 0px 30px!important

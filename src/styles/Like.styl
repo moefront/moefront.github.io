@@ -1,0 +1,70 @@
+.moefront-likeus
+  width: 100%
+  height: 100%
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  flex-wrap: wrap
+  position: relative
+  transition: .3s all linear
+  
+  &.state-liked
+    background: #ec7068
+    color: #fff
+    .likeus-button
+      color: #fff
+      &:hover
+        color: #fff
+    .moefront-copyright
+      a
+        color: #fff
+  
+  .likeus-title
+    width: 100%
+    margin: 30px 0px
+    font-size: 66px
+    text-align: center
+    font-family: 'Satisfy'
+    
+  .likeus-description
+    width: 100%
+    font-size: 30px
+    padding: 0px 60px
+    text-align: center
+  
+  .likeus-button
+    color: #000
+    font-size: 50px
+    margin: 20px 0px
+    padding: 15px 15px
+    transition: .3s all linear
+    cursor: pointer
+    
+    &:hover
+      color: #ec7068
+      
+    .like-count
+      margin-left: 15px
+      
+.moefront-copyright
+  width: 100%
+  height: 40px
+  font-size: 12px
+  background: rgba(51, 51, 51, 0.08)
+  text-align: center
+  white-space: wrap
+  line-height: 40px
+  position: absolute
+  bottom: 0px
+  
+  a
+    color: #000
+    text-decoration: none
+    border-bottom: 1px solid darken(#fff, 10%)
+    border-bottom-style: dashed
+    
+@media screen and (max-width: 760px)
+  .moefront-copyright
+    display: none
